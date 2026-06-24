@@ -1,0 +1,22 @@
+:root {
+  /* Acentos dorados */
+  --accent:        #F0BE3A;
+  --accent-light:  #F4D87A;
+  --accent-dark:   #D99E2B;
+
+  /* Fondos */
+  --bg-deep:       #0E0E1F;
+  --bg-navy:       #1A1830;
+  --bg-section:    #281A35;
+  --bg-hero:       #3A2A50;
+
+  /* Superficies / tarjetas */
+  --card:          #2E2042;
+  --card-light:    #483060;
+  --border-lila:   #604860;
+
+  /* Texto */
+  --text:          #F5F3F8;
+  --text-muted:    #A89AB8;
+  --text-faint:    #786078;
+}
