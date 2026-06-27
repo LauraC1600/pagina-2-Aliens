@@ -1,22 +1,97 @@
 :root {
   /* Acentos dorados */
-  --accent:        #F0BE3A;
-  --accent-light:  #F4D87A;
-  --accent-dark:   #D99E2B;
+  --textT: #F0BE3A;
+  --A-light: #F4D87A;
+  --A-dark: #D99E2B;
 
   /* Fondos */
-  --bg-deep:       #0E0E1F;
-  --bg-navy:       #1A1830;
-  --bg-section:    #281A35;
-  --bg-hero:       #3A2A50;
+  --bg-navy: #1A1830;
+  --bg-section: #281A35;
+  --bg-hero: #3A2A50;
 
   /* Superficies / tarjetas */
-  --card:          #2E2042;
-  --card-light:    #483060;
-  --border-lila:   #604860;
+  --card: #2E2042;
+  --card-light: #483060;
+  --border-lila: #604860;
 
   /* Texto */
-  --text:          #F5F3F8;
-  --text-muted:    #A89AB8;
-  --text-faint:    #786078;
+  --negro: #0E0E1F;
+  --blanco: #F5F3F8;
+  --text-muted: #A89AB8;
+  --text-faint: #786078;
 }
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/*este se utiliza para que el conteo de tamño sea solo el recuadro*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*el font-size de 62.5% con el body en 16px ajustan el valor del rem para poderlo manejar que sea equivalente a 10px */
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 100%);
+}
+
+h1{
+color: var(--blanco);
+}
+h1 span {
+  color: var(--textT);
+}
+
+.boton{
+  background-color: var(--A-light);
+  text-decoration: none;
+  color:var(--negro);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+
+}
+
+.boton2{
+  background-color: var(--bg-hero);
+    text-decoration: none;
+  color:var(--blanco);
+  border-radius: .5rem;
+  padding: 1rem;
+  border: var(--blanco) solid;
+}
+
+.contenedor{
+  background-color: var(--bg-hero);
+}
+
+ .hero {
+     background-image: url(../img/Hero.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     height: 300px;
+     position: relative;
+     margin-bottom: 2rem;
+ }
+
+  .contenido-hero {
+     position: absolute;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     background: rgb(0 0 0 /40%);
+     width: 100%;
+     height: 100%;
+
+ }
