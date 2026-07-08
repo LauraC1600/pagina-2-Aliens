@@ -6,6 +6,7 @@
     /* Fondos */
     --bg-navy: #1A1830;
     --bg-hero: #3A2A50;
+    --card: #2E2042;
 
     /* Superficies / tarjetas */
     --card-light: #483060;
@@ -88,32 +89,47 @@ a {
     color: var(--blanco);
 }
 
-footer a{
+footer a {
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
 .boton {
+    display: inline-block;
     background-color: var(--A-light);
     text-decoration: none;
     color: var(--negro);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
-    margin: 2.5rem 2rem;
-
+    margin: 0;
 }
 
 .boton2 {
+    display: inline-block;
     background-color: var(--bg-hero);
     text-decoration: none;
     color: var(--blanco);
     border-radius: 1rem;
-    padding: .7rem;
+    padding: .7rem 1.5rem;
     border: var(--blanco) solid;
+    margin: 0;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start; /* ← ya lo tienes, bien */
     margin: 2.5rem 0;
 }
 
+@media (min-width: 1140px) {
+    .contenedor-botones {
+        flex-direction: row;
+        align-items: center;
+    }
+}
 
 .hero {
     background-image: url(../img/Hero.png);
@@ -356,7 +372,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
