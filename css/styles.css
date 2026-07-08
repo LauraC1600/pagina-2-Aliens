@@ -5,19 +5,15 @@
 
     /* Fondos */
     --bg-navy: #1A1830;
-    --bg-section: #281A35;
     --bg-hero: #3A2A50;
 
     /* Superficies / tarjetas */
-    --card: #2E2042;
     --card-light: #483060;
     --border-lila: #604860;
 
     /* Texto */
     --negro: #0E0E1F;
     --blanco: #F5F3F8;
-    --text-muted: #A89AB8;
-    --text-faint: #786078;
 }
 
 
@@ -43,7 +39,6 @@ html {
 body {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 100%);
 }
 
 h1 {
@@ -63,14 +58,40 @@ h1 span {
 h2 {
     font-size: 3rem;
     color: var(--textT);
+    margin-bottom: 1.5rem;
 }
 
 h3 {
+    font-size: 2.4rem;
     color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+footer h3 {
+    color: var(--textT);
+    margin-bottom: .5rem;
 }
 
 h4 {
     color: var(--A-light);
+}
+
+p {
+    color: var(--blanco);
+    margin-bottom: 3rem;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+footer a{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .boton {
@@ -79,7 +100,7 @@ h4 {
     color: var(--negro);
     padding: 1rem;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 2.5rem 2rem;
 
 }
 
@@ -87,21 +108,12 @@ h4 {
     background-color: var(--bg-hero);
     text-decoration: none;
     color: var(--blanco);
-    border-radius: .5rem;
-    padding: 1rem;
+    border-radius: 1rem;
+    padding: .7rem;
     border: var(--blanco) solid;
+    margin: 2.5rem 0;
 }
 
-
-p {
-    color: var(--blanco);
-}
-
-
-a {
-    text-decoration: none;
-    color: var(--blanco);
-}
 
 .hero {
     background-image: url(../img/Hero.png);
@@ -205,6 +217,10 @@ a {
     }
 }
 
+.contenido-hero p {
+    margin: 0;
+}
+
 
 h1 {
     color: var(--blanco);
@@ -265,7 +281,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .tarjeta {
@@ -273,7 +289,7 @@ h1 {
     border: 1px solid var(--border-lila);
     border-radius: 1.2rem;
     padding: 2rem;
-    min-height: 20rem;
+    min-height: 40rem;
 }
 
 
@@ -328,4 +344,22 @@ h1 {
     border: 1px solid var(--border-lila);
     border-radius: 1rem;
     padding: 1.5rem;
+}
+
+
+footer {
+    background-color: var(--bg-navy);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
